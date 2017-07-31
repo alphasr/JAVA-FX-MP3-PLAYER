@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication001.FXMLDocumentController">
+    <children>
+      <Label fx:id="beat_it" layoutX="157.0" layoutY="23.0" prefHeight="55.0" prefWidth="85.0" text="Beat_!t" textFill="#200ca4">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="play" layoutX="313.0" layoutY="117.0" mnemonicParsing="false" onAction="#play" text="Play">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="Open" layoutX="33.0" layoutY="117.0" mnemonicParsing="false" onAction="#open" text="Open">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="Stop" layoutX="158.0" layoutY="92.0" mnemonicParsing="false" onAction="#stop" text="Stop" />
+      <Label fx:id="song_name" layoutX="10.0" prefHeight="39.0" prefWidth="384.0" stylesheets="@../cascade.css" />
+      <Button fx:id="exit" layoutX="332.0" layoutY="7.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+      <Label layoutX="98.0" layoutY="152.0" prefHeight="35.0" prefWidth="181.0" text="Recenlty played">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list_view" layoutX="10.0" layoutY="208.0" prefHeight="193.0" prefWidth="378.0" />
+    </children>
+</AnchorPane>
